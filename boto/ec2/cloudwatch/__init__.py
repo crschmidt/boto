@@ -109,7 +109,7 @@ class CloudWatchConnection(AWSQueryConnection):
                                     https_connection_factory, path)
 
     def _required_auth_capability(self):
-        return ['ec2']
+        return ['ec2'] # Testing
 
     def build_dimension_param(self, dimension, params):
         prefix = 'Dimensions.member'
